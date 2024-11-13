@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Heebo:wght@100..900&family=Noto+Sans+Ethiopic:wght@100..900&display=swap');
+
+:root {
+    --titleColor: #000000;
+    --titleColorHover: #757575;
+    --titleColorActive: 
+    --textColor: #171717;
+    --borderColor: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Faculty Glyphic", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6, strong {
+    color: var(--titleColor);
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.9rem;
+    color: var(--textColor);
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-container {
+        width: 90%;
+    }
+}
+
+/* Navigasi */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.navbar ul li {
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li a {
+    color: var(--titleColor);
+}
+
+.dharma {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.dharma a {
+    color: var(--titleColor);
+}
+
+/* Button */
+.btn {
+    padding: 0.7rem 1.5rem;
+    border: 1.5px solid var(--borderColor);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: 1.5px solid var(--titleColorHover);
+    color: var(--titleColorHover);
+}
+
+.btn:active {
+    background-color: #d9d9d9;
+    color: var(--titleColorHover)
+}
+/* End of Button */
+
+/* Burger */
+.burger div {
+    width: 25px;
+    height: 2px;
+    background-color: #000000;
+    margin: 7px;
+    transition: all 0.3s;
+    z-index: 99;
+}
+
+.burger {
+    display: none;
+    z-index: 99;
+    position: fixed;
+    top: 33px;
+    right: 35px;
+}
+/* End of Burger */

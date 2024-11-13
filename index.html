@@ -1,282 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ramdev Website</title>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <title>Dharma Yoga</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
 
+    <!-- Navbar -->
+    <header>
+        <div class="main-container">
+            <div class="navbar">
+                <div class="dharma">
+                    <a href="/">Dharma</a>
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#showcases">Showcases</a></li>
+                        <li><a href="#pengalaman">Pengalaman</a></li>
+                        <li><a href="#keterampilan">Keterampilan</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="./assets/file/CV.pdf" target="_blank"><button class="btn">Download CV</button></a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Untuk Responsif -->
+                <div class="burger">
+                    <div class="line-1"></div>
+                    <div class="line-2"></div>
+                    <div class="line-3"></div>
+                </div>
+                <!-- Akhir dari responsif -->
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-
-
-    <link rel="stylesheet" href="style.css" />
-  </head>
-
-  <body>
-
-    <header class="header">
-      <a href="#" class="logo">Portfolio</a>
-
-      <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Education</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
-      </nav>
-
-      <div class="bx bx-moon" id="darkMode-icon"></div>
-
-      <div class="bx bx-menu" id="menu-icon"></div>
+            </div>
+        </div>
     </header>
+    <!-- End of Navbar -->
 
-
-    <section class="home" id="home">
-      <div class="home-content">
-        <h3>Hello, I am</h3>
-        <h1>Rama Devantara</h1>
-        <p>I'm a Web Development and CySec Enthusiast</p>
-        <p>
-          i'm a Self Taught Web Developer, currently in learning stage about
-          Full Stack Web Development.
-        </p>
-
-        <div class="social-media">
-          <a
-            href="https://instagram.com/rama_devantara?igshid=OGQ5ZDc2ODk2ZA=="
-            target="_blank"
-            rel="noopener noreferrer"
-            ><i class="bx bxl-instagram-alt"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/putu-rama-devantara-47049a290/"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><i class="bx bxl-linkedin"></i
-          ></a>
-          <a
-            href="https://github.com/RuneSong-ctrl"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><i class="bx bxl-github"></i
-          ></a>
-        </div>
-
-        <a href="https://drive.google.com/drive/folders/1xBg8q8ClvW1o6Q_Q3MXKyMv3HvTOj5VF?usp=drive_link" class="btn" target="_blank" rel="noopener noreferrer">Download CV</a>
-      </div>
-      <div class="profession-container">
-        <div class="overlay"></div>
-      </div>
-    </section>
-
-    <section class="about" id="about">
-      <div class="about-img">
-        <img src="images/about.png" alt="" />
-      </div>
-
-      <div class="about-content">
-        <h2 class="heading">About <span>Me</span></h2>
-        <h3>
-          Hi there, welcome to my website! I'm Rama, a passionate web developer
-          who enjoys learning new technologies and currently in learning stage!
-        </h3>
-        <p>
-          This website is my personal blog where I show my project about 
-          web development that i have working on it since last year, using
-          some various technology such as ReactJS.
-        </p>
-        <p>Thank you for visiting my website.</p>
-      </div>
-    </section>
-
-
-    <section class="services" id="services">
-      <h2 class="heading">Education and <span>Trainings</span></h2>
-
-      <div class="services-container">
-        <div class="services-box">
-          <i class="bx bx-code-alt"></i>
-          <h3>Udayana University - Information Technology</h3>
-          <p>
-          Formal education provided by the state <br><strong>Key skills:</strong> Progaming and Algorithm, Team-working and
-          Research Skills.</br>
-          </p>
-          <a href="https://www.unud.ac.id" class="btn" target="_blank" rel="noopener noreferrer">Read More</a>
-        </div>
-        <div class="services-box">
-          <i class="bx bxl-mongodb"></i>
-          <h3>Front-End Developer Certificate - Meta </h3>
-          <p>
-            Front End Web Development training provided by Meta on Coursera platform.<br><strong>Key Skills: </strong>HTML, CSS, JavaScript, ReactJS,and GitHub</br>
-          </p>
-          <a href="https://coursera.org/verify/professional-cert/4GPF3L29YMM5" class="btn" target="_blank" rel="noopener noreferrer">Read More</a>
-        </div>
-        <div class="services-box">
-          <i class="bx bxl-sketch"></i>
-          <h3>Cloud Application Development - IBM</h3>
-          <p>
-            Cloud Application Development Foundations Specialization, diving into cloud-native, DevOps & key technologies like React & Node.js.<br><strong>Key Skills: </strong>ReactJS, NodeJS, Cloud</br>
-          </p>
-          <a href="https://coursera.org/verify/specialization/LN7EC86MCB27" class="btn" target="_blank" rel="noopener noreferrer">Read More</a>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="portfolio" id="portfolio">
-      <h2 class="heading">Latest <span>Project</span></h2>
-
-      <div class="portfolio-container">
-        <div class="portfolio-box">
-          <img src="images/portofolio7.png" alt="" />
-
-          <div class="portfolio-layer">
-            <h4>InsightFief</h4>
-            <p>
-             InsightFief Tech & History Blog Website
-            </p>
-            <a href="https://insightfief.netlify.app" target="blank" rel="noopener noreferrer" ><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-        <div class="portfolio-box">
-          <img src="images/portofolio2.png" alt="" />
-
-          <div class="portfolio-layer">
-            <h4>Luna</h4>
-            <p>
-            AI-chat assistant using ReactJS and Google Gemini API
-            </p>
-            <a href="https://luna-chat.netlify.app" target="blank" rel="noopener noreferrer"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-        <div class="portfolio-box">
-          <img src="images/portofolio3.png" alt="" />
-
-          <div class="portfolio-layer">
-            <h4>Little Lemon</h4>
-            <p>
-            Restaurant Booking Website using ReactJS
-            </p>
-            <a href="https://project-little-lemon.vercel.app" target="blank" rel="noopener noreferrer"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-        <div class="portfolio-box">
-          <img src="images/portofolio4.png" alt="" />
-
-          <div class="portfolio-layer">
-            <h4>Sumlify</h4>
-            <p>
-            AI article summarizer using RapidAPI to condense text form link
-            </p>
-            <a href="https://project-sumlify.netlify.app" target="blank" rel="noopener noreferrer"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-        <div class="portfolio-box">
-          <img src="images/portofolio5.png" alt="" />
-
-          <div class="portfolio-layer">
-            <h4>Omnifood</h4>
-            <p>
-              Part of Udemy HTML/CSS Course by Jonas Schmedtmann Portofolio Project
-            </p>
-            <a href="https://project-omnifood-website.netlify.app" target="blank" rel="noopener noreferrer"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-        <div class="portfolio-box">
-          <img src="images/portofolio6.png" alt="" />
-
-          <div class="portfolio-layer">
-            <h4>Weather App</h4>
-            <p>
-             Weather app based on location using weatherAPI
-            </p>
-            <a href="https://project-weather-appx.netlify.app" target="blank" rel="noopener noreferrer"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <h2 class="heading">Contact <span>Me!</span></h2>
-
-      <form class="cta-form" id="contact-form">
-        <div class="input-box">
-          <input type="text" id="full-name" placeholder="Full Name" />
-          <input type="email" id="email-address" placeholder="Email Address" />
-        </div>
-        <textarea id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
-        <p class="contact__message" id="contact-message"></p>
-        <input type="submit" value="Send Message" class="btn" />
-      </form>      
-    </section>
-
-
-    <footer class="footer">
-      <div class="footer-text">
-        <p>Copyright &copy; 2024 | All Rights Reserved.</p>
-      </div>
-
-      <div class="footer-iconTop">
-        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
-      </div>
-    </footer>
-
-
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-
-    <script src="js/script.js"></script>
-
-
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script type="text/javascript">
-  (function(){
-    emailjs.init("QbS_coCA3S_XDWc4a");
-  })();
-
-  document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-
-    const fullName = document.getElementById('full-name').value;
-    const emailAddress = document.getElementById('email-address').value;
-    const message = document.getElementById('message').value;
-
-    const contactMessage = document.getElementById('contact-message');
-
-
-    emailjs.send('service_9m132k7', 'template_d10b7qi', {
-      from_name: fullName,
-      from_email: emailAddress,
-      message: message
-    }).then(function(response) {
-      console.log('SUCCESS!', response.status, response.text);
-      contactMessage.textContent = "Message sent successfully!";
-      contactMessage.classList.add('success');
-      contactMessage.classList.remove('error');
-    }, function(error) {
-      console.log('FAILED...', error);
-      contactMessage.textContent = "Failed to send the message. Please try again.";
-      contactMessage.classList.add('error');
-      contactMessage.classList.remove('success');
-    });
-  });
-</script>
-  </body>
+</body>
 </html>
