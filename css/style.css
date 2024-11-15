@@ -2,6 +2,7 @@
 
 :root {
     --titleColor: #000000;
+    --PreTitleColor: #444444b4;
     --titleColorHover: #757575;
     --titleColorActive: 
     --textColor: #171717;
@@ -78,20 +79,18 @@ a {
 
 /* Button */
 .btn {
-    padding: 0.7rem 1.5rem;
-    border: 1.5px solid var(--borderColor);
-    border-radius: 10px;
+    padding: 1.5rem 2rem;
+    border: 2px solid rgb(0, 255, 13);
+    background-color: #ffffff23;
     cursor: pointer;
 }
 
 .btn:hover {
-    border: 1.5px solid var(--titleColorHover);
-    color: var(--titleColorHover);
+    background-color: #adf7b030;
 }
 
 .btn:active {
-    background-color: #d9d9d9;
-    color: var(--titleColorHover)
+    background-color: #95d2963e;
 }
 /* End of Button */
 
@@ -113,3 +112,40 @@ a {
     right: 35px;
 }
 /* End of Burger */
+
+/* Title */
+.pre-title {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: var(--PreTitleColor);
+    padding-bottom: 10px;
+    position: relative;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+/* End of Title */
+
+/* Hero Section */
+#hero {
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.hero-name {
+    font-size: 3rem;
+    margin: 0.5rem 0 1rem;
+}
+
+.hero-right img {
+    width: 60%;
+    height: 50%;
+}
+
+.hero-right {
+    display: flex;
+    justify-content: center;
+}
+/* End of Hero Section */
