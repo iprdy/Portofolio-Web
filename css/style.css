@@ -64,6 +64,14 @@ a {
     align-items: center;
 }
 
+.navbar ul li a:hover {
+    color: rgb(77, 77, 77);
+}
+
+.navbar ul li a:active {
+    color: rgb(153, 153, 153);
+}
+
 .navbar ul li a {
     color: var(--titleColor);
 }
@@ -79,8 +87,12 @@ a {
     color: var(--titleColor);
 }
 
+
+/* End of Nav */
+
 /* Button */
 .btn {
+    margin-top: 1.5rem;
     padding: 1rem 1.5rem;
     font-family: "Faculty Glyphic";
     font-weight: 500;
@@ -99,25 +111,6 @@ a {
     background-color: rgb(214, 214, 214)
 }
 /* End of Button */
-
-/* Burger */
-.burger div {
-    width: 25px;
-    height: 2px;
-    background-color: #000000;
-    margin: 7px;
-    transition: all 0.3s;
-    z-index: 99;
-}
-
-.burger {
-    display: none;
-    z-index: 99;
-    position: fixed;
-    top: 33px;
-    right: 35px;
-}
-/* End of Burger */
 
 /* Title */
 .pre-title {
@@ -224,9 +217,42 @@ a {
 }
 /* End of Showcases */
 
+/* Experience */
+#experience {
+    padding: var(--sectionPadding);
+}
+
+.experience .pre-title {
+    margin: 0 auto;
+}
+
+.experience .section-title {
+    text-align: center;
+}
+
+.experience {
+    background-color: #ffffff;
+    padding: 2rem 1.5rem;
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: var(--itemBorderRadius);
+}
+
+.experience h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.experience .year {
+    font-weight: bold;
+    color: var(--PreTitleColor);
+    margin-bottom: 1rem;
+}
+/* End of Experience */
+
 /* Skills Section */
 #skills {
     padding: var(--sectionPadding);
+    background-color: rgb(239, 239, 239);
 }
 
 .skills .pre-title {
@@ -240,9 +266,9 @@ a {
 .skill {
     padding: 3rem 2rem;
     text-align: center;
-    background-color: #ececec;
+    background-color: #ffffff;
     border-radius: var(--itemBorderRadius);
-    border: 1px solid rgb(239, 239, 239);
+    border: 1px solid rgb(224, 224, 224);
 }
 
 .skill h4 {
@@ -251,7 +277,7 @@ a {
 }
 
 .skill-icon {
-    background: rgb(255, 255, 255);
+    background: rgb(224, 224, 224);
     width: fit-content;
     margin: 0 auto;
     padding: 1rem 1.3rem;
@@ -260,4 +286,139 @@ a {
 
 .skill-icon svg {
     fill: #616161;
+}
+
+/* Section Contact */
+#contact {
+    padding: var(--sectionPadding);
+    text-align: center;
+}
+
+.contact .pre-title {
+    margin: 0 auto;
+}
+
+.contact p {
+    font-size: 1.5rem;
+}
+
+.contact-info {
+    margin: 2rem 0;
+    font-size: 1rem;
+}
+
+.contact-info p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.contact-info a {
+    color: var(--titleColor);
+    font-weight: bold;
+}
+
+.social-media {
+    margin-top: 2rem;
+}
+
+.social-media h4 {
+    margin-bottom: 1rem;
+}
+
+.social-media a {
+    margin: 1rem;
+    color: var(--titleColor);
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    fill: #555;
+    color: black;
+}
+
+/* Footer */
+#footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+#footer p {
+    margin: 0;
+    font-weight: 400;
+}
+/* End of Footer */
+
+/* Scroll to Top */
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#scrollToTop:hover {
+    background-color: #555;
+}
+
+#scrollToTop svg {
+    fill: white;
+    width: 24px;
+    height: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 0.5rem;
+    }
+
+    .navbar ul.active {
+        display: flex; /* Display when active */
+    }
+
+    .navbar .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    #scrollToTop {
+        width: 40px;
+        height: 40px;
+    }
+
+    #scrollToTop svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    #hero {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        text-align: center;
+    }
+
+    .hero-right img {
+        width: 50%;
+    }
+    
+    #hero .pre-title {
+        margin: 0 auto;
+    }
 }
